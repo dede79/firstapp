@@ -3,14 +3,17 @@
 
 <div class="container-fluid"
     <div class="row">
+        <% width = "304" 
+           height = "236"
+        %>
         <div class="col-lg-4">
-            <img class= "image-responsive"src="/assets/watch.jpg" alt= "featuredproduct" width="304" height="236">
+            <%= image_tag "watch.jpg", alt: "featuredproduct", width: width, height: height %>
         </div>
         <div class="col-lg-4">
-            <img class="img-responsive" src="/assets/tiara.jpg" alt="Featured Product Two" width="304" height="236">
+            <%= image_tag "tiara.jpg", alt: "featuredproduct", width: width, height: height %>
         </div>
         <div class="col-lg-4">
-            <img class="img-responsive" src="/assets/ring.jpg" alt="Featured Product Three" width="304" height="236">
+            <%= image_tag "ring.jpg", alt: "featuredproduct", width: width, height: height %>
         </div>
     </div>
 </div>
