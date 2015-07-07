@@ -8,6 +8,10 @@ gem 'rails', '4.0.2'
 #ruby version
 ruby '2.2.2'
 
+group :development do
+  gem 'quiet_assets'
+end	
+
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3'
