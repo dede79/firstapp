@@ -13,5 +13,8 @@
   <strong>Image url:</strong>
   <%= @product.image_url %>
 </p><br>
+
+<%= image_tag@product.image_url %>
+
 <%= link_to 'Edit', edit_product_path(@product) %> | <br>
 <%= link_to 'Back', products_path %>
