@@ -1,0 +1,210 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/dede/todo/config/application.rb",
+		"/home/dede/shopdemo/app/controllers/static_pages_controller.rb",
+		"/home/dede/shopdemo/Gemfile",
+		"/home/dede/shopdemo/app/assets/stylesheets/application.css.scss",
+		"/home/dede/shopdemo/app/assets/javascripts/application.js",
+		"/home/dede/todo/spec/features/todo_lists/create_spec.rb",
+		"/home/dede/todo/config/routes.rb",
+		"/home/dede/todo/spec/spec_helper.rb",
+		"/home/dede/todo/Gemfile",
+		"/home/dede/odot/Gemfile",
+		"/home/dede/odot/Gemfile.lock",
+		"/home/dede/redditdemo/Gemfile.lock",
+		"/home/dede/redditdemo/Gemfile",
+		"/home/dede/demoreddit/redditproject/Gemfile",
+		"/home/dede/railsgirls/terminal.glue",
+		"/home/dede/railsgirls/Gemfile",
+		"/home/dede/shopdemo/app/views/static_pages/index.html.erb",
+		"/home/dede/shopdemo/app/views/products/index.html.erb",
+		"/home/dede/shopdemo/app/views/static_pages/contact.html.erb",
+		"/home/dede/railsgirls/README.rdoc",
+		"/home/dede/nameofapp/app/assets/stylesheets/products.css.scss",
+		"/home/dede/nameofapp/app/views/static_pages/index.html.erb",
+		"/home/dede/nameofapp/app/views/products/show.html.erb",
+		"/home/dede/nameofapp/app/views/products/index.html.erb",
+		"/home/dede/railsgirls/config/application.rb",
+		"/home/dede/railsgirls/app/assets/stylesheets/application.css",
+		"/home/dede/railsgirls/app/assets/stylesheets/font-awesome.css.scss.erb",
+		"/home/dede/railsgirls/app/assets/stylesheets/font-awesome.css.erb",
+		"/home/dede/railsgirls/app/views/welcome/homepage.html.erb",
+		"/home/dede/railsgirls/config/routes.rb",
+		"/home/dede/Desktop/startbootstrap-agency-1.0.4/index.html",
+		"/home/dede/railsgirls/app/assets/stylesheets/agency.css",
+		"/home/dede/railsgirls/app/assets/stylesheets/font-awesome.min.css.erb",
+		"/home/dede/Desktop/my_cf_project_final/my_cf_project_final/index.html",
+		"/home/dede/Desktop/my_cf_project_final/my_cf_project_final/css/styles.css",
+		"/home/dede/railsgirls/config/environments/production.rb",
+		"/home/dede/nameofapp/Gemfile",
+		"/home/dede/nameofapp/app/views/views/static_pages.html.erb",
+		"/home/dede/nameofapp/app/views/static_pages/contact.html.erb",
+		"/home/dede/nameofapp/db/development.sqlite3",
+		"/home/dede/nameofapp/app/views/layouts/application.html.erb",
+		"/home/dede/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/dede/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/dede/.config/sublime-text-3/Packages/User/JSON.sublime-settings"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/home/dede/railsgirls"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"img"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "bracelet.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 158.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
