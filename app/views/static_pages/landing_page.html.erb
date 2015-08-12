@@ -1,7 +1,5 @@
-<h2> Featured Product</h2>
-<p>
-name: <%= @featured_product.name %><br>
-</p>
+<h1> Welcome to Dede's Jewelry Shop</h1>
+<h2> Featured Product:</h2>
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -12,14 +10,15 @@ name: <%= @featured_product.name %><br>
   </ol>
 
   <!-- Wrapper for slides -->
-   <div class="carousel-inner" role="listbox">
+   
+  <div class="carousel-inner" role="listbox">
     <% @products.each do |product| %>
-  <div class="item<%= "active" if product == @products.first %>">
+  <div class="item <%= "active" if product == @products.first %>">
     <%= image_tag(product.image_url) %>
     <div class="carousel-caption">
       <%= product.name %>
     </div>
-        </div>
+  </div>
     <% end %>
   </div>
 

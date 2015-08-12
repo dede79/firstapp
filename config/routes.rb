@@ -1,11 +1,11 @@
 Nameofapp::Application.routes.draw do
-  resources :products
-  resources :orders, only: [:index, :show, :new, :create]
+  
   get "static_pages/contact"
   get "static_pages/about"
   get "views/static_pages"
   get "views/about"
-  get "static_pages/landing_page"
+  resources :products
+  resources :orders, only: [:index, :show, :new, :create]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

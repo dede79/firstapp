@@ -1,8 +1,10 @@
 class StaticPagesController < ApplicationController
-  def contact
-  end
+   def index
+   	render('landing_page')
+   end
 
   def landing_page
-    @featured_product = Product.limit(3)
+    @products = Product.all
+    @product = Product.new
   end
 end
