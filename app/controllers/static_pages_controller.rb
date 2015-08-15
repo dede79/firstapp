@@ -1,10 +1,8 @@
 class StaticPagesController < ApplicationController
-   def index
-   	render('landing_page')
-   end
 
   def landing_page
-    @products = Product.all
+    @products = Product.limit(3)
     @product = Product.new
   end
+  
 end
