@@ -5,4 +5,8 @@ class StaticPagesController < ApplicationController
     @product = Product.new
   end
   
+  def contact
+  	
+  end
+  
 end
