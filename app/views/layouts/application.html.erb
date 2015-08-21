@@ -36,7 +36,7 @@
           <li><%= link_to 'Products List', products_path %></li>
           <li><%= link_to 'Contact', static_pages_contact_path %>
             </ul>
-          <div class="form-group">
+          <div class="form-search">
             <%= form_tag("/products", method: "get") do %>
             <%= label_tag(:q, "Search for:") %>
             <%= text_field_tag(:q) %>
