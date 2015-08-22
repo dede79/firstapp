@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Starter Template for Bootstrap</title>
+  <title>Dede's shop</title>
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -36,15 +36,12 @@
           <li><%= link_to 'Products List', products_path %></li>
           <li><%= link_to 'Contact', static_pages_contact_path %>
             </ul>
-          <div class="form-inline">
-            <div class="form-group">
-            <%= form_tag("/products", method: "get") do %>
-              <%= label_tag(:q, "Search for:") %>
-                <div class="form-control">
-                  <%= text_field_tag(:q)%>
-                </div>
+            <%= form_tag "/products", method: "get", :class =>"form-inline" do %>
+              <div class="form-group">
+                <%= label_tag :q, "Search for:"%>
+                <%= text_field_tag :q, nil, :class =>"form-control"%>
               </div>
-              <%= submit_tag("Search", class: "btn btn-default") %>
+              <%= submit_tag("Search", :class =>"btn btn-default") %>
             <% end %> 
           </div>
     </div>
@@ -56,7 +53,6 @@
         <%= msg %>
       <% end %>
     <% end %>
-
     <%= yield %>
   </div>
 </body>
