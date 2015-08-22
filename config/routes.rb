@@ -4,6 +4,7 @@ Nameofapp::Application.routes.draw do
   get "static_pages/about"
   get "static_pages/landing_page"
   post "static_pages/thank_you"
+
   resources :products
   resources :orders, only: [:index, :show, :new, :create]
   # The priority is based upon order of creation: first created -> highest priority.
