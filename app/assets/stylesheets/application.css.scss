@@ -14,3 +14,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.field {
+	color: blue;
+	max-width: 50%;
+}
+
+.form-inline {
+	margin-top: 10px;
+	float: right;
+	color: gray;
+}
