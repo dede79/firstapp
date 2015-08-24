@@ -1,7 +1,11 @@
 source 'https://rubygems.org'
 gem 'therubyracer'
 gem 'less-rails'
+
 gem 'bootstrap-generators', '~> 3.3.4'
+
+gem 'bootstrap-sass', '~> 3.2.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
@@ -38,11 +42,13 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
-gem 'bootstrap-sass', '~> 3.2.0'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
 gem 'devise'
+
+gem 'cancancan'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
