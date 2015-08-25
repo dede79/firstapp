@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Dede's shop</title>
+  <title>Dede's bridal shop</title>
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -44,7 +44,7 @@
               <%= submit_tag("Search", :class =>"btn btn-default") %>
             <% end %>
             <% if user_signed_in? %>
-            <%= link_to('Logout', destroy_user_session_path, :method => :delete, :class => "btn btn-default") %>      
+            <%= link_to('Logout', destroy_user_session_path, :method => :delete, :class => "btn btn-default" , :id => "login-button") %>      
            <% else %>
            <%= link_to('Login', new_user_session_path, :class =>"btn btn-default", :id =>"login-button") %>  
           <% end %>

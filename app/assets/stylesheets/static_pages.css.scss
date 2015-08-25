@@ -2,8 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1 {
-	color: blue;
+h1,
+h2, {
+    color: dark-silver;
 	text-align: center;
 	font-family: Helvetica, serif;
 }
@@ -18,3 +19,12 @@ h1 {
 	color: gray;
 }
 
+.carousel {
+    max-width: 80%;
+    margin: auto;
+  }
+
+.carousel-caption {
+  color: gray;
+
+}
