@@ -46,16 +46,16 @@
 
             <!--devise sign in/out-->
             <% if user_signed_in? %>
-              <%= link_to('Logout', destroy_user_session_path, :method => :delete, :class => "btn btn-default" , :id => "login-button") %>      
+              <%= link_to('Logout', destroy_user_session_path, :method => :delete, :class => "btn btn-link" , :id => "login-button") %>      
              <% else %>
-               <%= link_to('Login', new_user_session_path, :class =>"btn btn-default", :id =>"login-button") %>  
+               <%= link_to('Login', new_user_session_path, :class =>"btn btn-link", :id =>"login-button") %>  
             <% end %>
 
           <!--sign up-->
             <% if user_signed_in? %>
-              <%= link_to('Edit registration', edit_user_registration_path, :class => "btn btn-default", :id => "edit-button") %>
+              <%= link_to('Edit registration', edit_user_registration_path, :class => "btn btn-link", :id => "edit-button") %>
             <% else %>
-              <%= link_to('Register', new_user_registration_path, :class => "btn btn-default", :id => "register-button")  %>
+              <%= link_to('Register', new_user_registration_path, :class => "btn btn-link", :id => "register-button")  %>
             <% end %>
         </div>
     </div>
