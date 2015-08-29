@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  # before_action :set_user, only: [:show, :edit, :update, :destroy]  
   load_and_authorize_resource
+  
+  #load_and_authorize_resource is a cancancan statement for all actions of user instance.
   # GET /users
   # GET /users.json
   def index
@@ -10,6 +12,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    #authorize! :show, @user
   end
 
   # GET /users/new
@@ -19,6 +22,10 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
+    # authorize! :edit, @user # this is going to check whether the current user is allowed to "edit"
+                              # the "@user" instance. Note that "@user" instance is holding the data/object
+                              # of the user that is populated with the "set_user" before_action, hence
+                              # the user that corresponds to the :id specified in the URL of the request.       
   end
 
   # POST /users
@@ -63,9 +70,9 @@ class UsersController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_user
-      @user = User.find(params[:id])
-    end
+    #def set_user
+    #  @user = User.find(params[:id])
+    #end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params

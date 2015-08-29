@@ -4,6 +4,16 @@ class Ability
   def initialize(user)
     user ||= User.new # guest user (not logged in)
     can :manage, User, id: user.id
+    # the above privilege assignment is equal / equivalent to:
+    #
+    # can :show, User, id: user.id
+    # can :edit, User, id: user.id
+    #   an edit action is allowed only to User instances that have id equal to the id of the user that is trying
+    #   to do the edit action, a.k.a the logged in user  that calls /users/:id/edit
+    # 
+    # can :index, User, id: user.id
+    # ...e.t.c.
+    # 
     # Define abilities for the passed in user here. For example:
     #
     #   user ||= User.new # guest user (not logged in)
