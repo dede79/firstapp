@@ -6,17 +6,17 @@ class ProductsController < ApplicationController
   def index
     if params[:q]
       search_term = params[:q]
-      @products = Product.where("name LIKE ?", "%#{search_term}%")
+      @products= Product.where("name LIKE ?", "%#{search_term}%")
     else
       @products = Product.all
     end
   end
 
-
+  
   # GET /products/1
   # GET /products/1.json
   def show
-    @comments = @product.comments.all.order("created_at DESC")
+  @comments = @product.comments
   end
 
   # GET /products/new
