@@ -1,36 +1,30 @@
 <p id="notice"><%= notice %></p>
+
+<%= image_tag@product.image_url, width: "500", height: "600"%>
+
 <p>
   <strong>Name:</strong>
   <%= @product.name %>
-</p><br>
+</p>
 
 <p>
   <strong>Description:</strong>
   <%= @product.description %>
-</p></br>
+</p>
 
 <p>
   <strong>Image url:</strong>
   <%= @product.image_url %>
-</p><br>
+</p>
 <p>
   <strong>Colour:</strong>
   <%= @product.colour %>
 </p>
-<%= image_tag@product.image_url %><br>
-<%= link_to 'Edit', edit_product_path(@product)%><br>
-<%= link_to 'Back', products_path %>
 
-<p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div></p>
+<p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+
+<p><%= link_to 'Edit', edit_product_path(@product)%>&nbsp;
+<%= link_to 'Back', products_path %></p>
+
 <%= render 'new_comment' %>
-
-<div class="product-reviews">
-    <% @comments.each do |comment| %>
-        <div class="row">
-            <hr>
-            <p><%= comment.user.first_name %> <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small></p>
-            <p><%= "Rating: #{comment.rating}/5" %></p>
-            <p><%= comment.body %></p>
-        </div>
-    <% end %>
-</div>
+<%= render 'comment' %>
