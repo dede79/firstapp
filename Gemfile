@@ -50,6 +50,10 @@ gem 'devise'
 
 gem 'cancancan'
 
+gem 'will_paginate'
+
+gem 'will_paginate-bootstrap'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
