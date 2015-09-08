@@ -5,5 +5,4 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
     has_many :orders
     has_many :products
-    has_many :users
 end

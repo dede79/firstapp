@@ -15,8 +15,13 @@ class CommentsController < ApplicationController
     end
   end
 
+ #reload the product detail page after the comment gets deleted.Need to retrieve the product record from the comment before we delete it, and redirect the user to that page:
  def destroy
- end
+    @comment = Comment.find(params[:id])
+    product = @comment.product
+    @comment.destroy
+    redirect_to product
+  end
 
 
 
