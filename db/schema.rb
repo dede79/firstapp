@@ -41,7 +41,6 @@ ActiveRecord::Schema.define(version: 20150906214638) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "colour"
-    t.string   "color"
   end
 
   create_table "users", force: true do |t|

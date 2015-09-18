@@ -46,7 +46,7 @@
 
             <!--devise sign in/out-->
             <% if user_signed_in? %>
-              <%= link_to('Logout', destroy_user_session_path, :method => :delete, :class => "btn btn-link" , :id => "login-button") %>      
+              <%= link_to "Log Out", destroy_user_session_path, :class => "button", method: :delete %>      
              <% else %>
                <%= link_to('Login', new_user_session_path, :class =>"btn btn-link", :id =>"login-button") %>  
             <% end %>
