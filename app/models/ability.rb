@@ -1,12 +1,12 @@
 class Ability
   include CanCan::Ability
-
+  # cancancan function below needed to be modified in order for rspec tests to pass.
   def initialize(user)
     user ||= User.new # guest user (not logged in)
-    if user.admin?
-      can :manage, :all
-    else
-      can :read, :all
+      can :manage, User, id: user.id
+      can :create, Comment, id: user.id
+      if user.admin?
+        can :destroy, :all
     end
     # the above privilege assignment is equal / equivalent to:
     #

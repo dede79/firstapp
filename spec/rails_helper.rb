@@ -5,6 +5,9 @@ require File.expand_path('../../config/environment', __FILE__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'spec_helper'
 require 'rspec/rails'
+# note: require 'devise' after require 'rspec/rails'
+require 'devise'
+
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
@@ -27,6 +30,7 @@ require 'rspec/rails'
 ActiveRecord::Migration.check_pending!
 
 RSpec.configure do |config|
+  
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
@@ -48,5 +52,6 @@ RSpec.configure do |config|
   #
   # The different available types are documented in the features, such as in
   # https://relishapp.com/rspec/rspec-rails/docs
+  config.include Devise::TestHelpers, :type => :controller
   config.infer_spec_type_from_file_location!
 end
