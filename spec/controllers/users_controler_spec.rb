@@ -3,7 +3,8 @@ require 'rails_helper'
   describe UsersController, :type => :controller do
 
     before do
-      @user = User.create(email: "doe@example.com", password: "1234567890")
+      @user = User.create(email: "doe@example.com", password: "1234567890", admin: true)
+      @user2 = User.create(email: "notadmin@email.com", password: "2123356789", admin: false)
     end
 
     describe "GET #show" do
@@ -24,5 +25,13 @@ require 'rails_helper'
           expect(response).to redirect_to(root_path)
         end
       end
+    
+      context "No admin rights" do
+        it "redirects to login page" do
+          get :show, id: @user2.id
+          expect(response).to redirect_to(root_path)
+        end
+      end
     end
   end
+

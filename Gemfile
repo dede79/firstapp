@@ -12,6 +12,8 @@ gem 'rails', '4.2.3'
 #ruby version
 ruby '2.2.2'
 
+gem 'spork-rails'
+
 group :development do
   gem 'quiet_assets'
 end	
@@ -30,6 +32,16 @@ end
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 end
+
+group :development do
+  gem 'guard'
+end
+
+group :development do
+  gem 'guard-spork'
+end
+
+gem 'stripe'
 
 # Use SCSS for stylesheets
 gem 'sass-rails'
@@ -57,6 +69,9 @@ gem 'cancancan'
 gem 'will_paginate'
 
 gem 'will_paginate-bootstrap'
+
+gem "factory_girl_rails", "~> 4.0"
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

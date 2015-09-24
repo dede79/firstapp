@@ -6,7 +6,7 @@ describe Product do
 
 		it "should have a name" do
 		  	# setup
-		    product = Product.new
+		    product = create :product
 
 		    # fire
 		    product.valid? # which checks the validity of the product
@@ -14,7 +14,7 @@ describe Product do
 		    # test results
 
 		    # expect( product.errors[:name].include?("can't be blank") ).to(be_truthy)
-	        expect(product.errors[:name]).to include("can't be blank")
+	        expect(products.errors[:name]).to include("can't be blank")
 	    end
     end
   	
@@ -25,18 +25,18 @@ describe Product do
 			  # setup : You need to create for instance 1 product with 3 comments
 		      # first comment to have rating 3, second comment to have rating 4
 		      # and third comment to have rating 5
-		      @product = Product.create! name: "foo"
-		      user = User.create! email: "foo@mailinator.com", password: '12345678', password_confirmation: '12345678'
-		      @product.comments << Comment.new(body: "body", user: user, product: @product, rating: 3)
-		      @product.comments << Comment.new(body: "body", user: user, product: @product, rating: 4)
-		      @product.comments << Comment.new(body: "body", user: user, product: @product, rating: 5)
+		      #@product = Product.create! name: "foo"
+		      #user = User.create! email: "foo@mailinator.com", password: '12345678', password_confirmation: '12345678'
+		      #@product.comments << Comment.new(body: "body", user: user, product: @product, rating: 3)
+		      #@product.comments << Comment.new(body: "body", user: user, product: @product, rating: 4)
+		      #@product.comments << Comment.new(body: "body", user: user, product: @product, rating: 5)
 
 		      # with factory
-		      #product = create :product
-		      #user = create :user
-		      #product.comments << build(user: user, :comment, rating: 3)
-		      #product.comments << build(user: user, :comment, rating: 4)
-		      #product.comments << build(user: user, :comment, rating: 5)
+		      product = create :product
+		      user = create :user
+		      product.comments << build(user: user, :comment, rating: 3)
+		      product.comments << build(user: user, :comment, rating: 4)
+		      product.comments << build(user: user, :comment, rating: 5)
 	        end
 	        		
 			it 'returns 4' do		      
@@ -53,12 +53,20 @@ describe Product do
 			  # setup : You need to create for instance 1 product with 4 comments
 		      #first comment to have rating 3, second comment to have rating 4
 		      # and third comment to have rating 3 and foruth comment is 4
-		      @product = Product.create! name: "bar"
-		      user = User.create! email: "foo2@mailinator.com", password: '901234567', password_confirmation: '901234567'
-		      @product.comments << Comment.new(body: "body", user: user, product: @product, rating: 3)
-		      @product.comments << Comment.new(body: "body", user: user, product: @product, rating: 4)
-		      @product.comments << Comment.new(body: "body", user: user, product: @product, rating: 3)
-		      @product.comments << Comment.new(body: "body", user: user, product: @product, rating: 4)
+		      #@product = Product.create! name: "bar"
+		      #user = User.create! email: "foo2@mailinator.com", password: '901234567', password_confirmation: '901234567'
+		      #@product.comments << Comment.new(body: "body", user: user, product: @product, rating: 3)
+		      #@product.comments << Comment.new(body: "body", user: user, product: @product, rating: 4)
+		      #@product.comments << Comment.new(body: "body", user: user, product: @product, rating: 3)
+		      #@product.comments << Comment.new(body: "body", user: user, product: @product, rating: 4)
+              
+              #with Factory Girl
+		      product = create :product
+		      user = create :user
+		      product.comments << build(user: user, :comment, rating: 3)
+		      product.comments << build(user: user, :comment, rating: 4)
+		      product.comments << build(user: user, :comment, rating: 3)
+		      product.comments << build(user: user, :comment, rating: 4)
 
 	        end
 	        	
