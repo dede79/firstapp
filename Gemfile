@@ -41,7 +41,7 @@ group :development do
   gem 'guard-spork'
 end
 
-gem 'stripe'
+gem 'stripe' , :git => 'https://github.com/stripe/stripe-ruby'
 
 # Use SCSS for stylesheets
 gem 'sass-rails'

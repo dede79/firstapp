@@ -16,6 +16,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+    background-color: #FCFFF5;
+	padding-top: 35px;
+}
+
 .field {
 	color: blue;
 	max-width: 50%;
@@ -28,6 +33,10 @@
 }
 
 #login-button {
+	margin-top: 8px;
+}
+
+#logout-button {
 	margin-top: 8px;
 }
 
