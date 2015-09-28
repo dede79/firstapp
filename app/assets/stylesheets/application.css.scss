@@ -17,8 +17,13 @@
 @import "bootstrap";
 
 body {
-    background-color: #FCFFF5;
+    background-image: url("back.png");
+    background-repeat: repeat;
 	padding-top: 35px;
+}
+
+* {
+	color: dark-silver;
 }
 
 .field {
