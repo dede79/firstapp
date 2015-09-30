@@ -16,3 +16,4 @@
 //= require turbolinks
 //= require bootstrap
 //= require_tree .
+<script src="magnific-popup/jquery.magnific-popup.js"></script>
