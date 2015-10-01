@@ -33,6 +33,10 @@ group :production do
   gem 'pg'
 end
 
+#replacingthe default secret_token with this gem to generatediff secret tokens in each ENV
+gem 'dotenv-rails', :groups => [:development, :test]
+
+#stripe card payment 
 gem 'stripe' , :git => 'https://github.com/stripe/stripe-ruby'
 
 # Use SCSS for stylesheets
@@ -43,6 +47,8 @@ gem 'uglifier'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails'
+
+gem 'modernizr-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

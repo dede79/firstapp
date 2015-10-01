@@ -9,4 +9,5 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Nameofapp::Application.config.secret_key_base = '7c71a598f1f331d3b48c187609712bf766552ce480ef8a2f3cdf91d153721fd98a7111bb25b220f3582a1e55e0d007bb1f354952ed9a7454f8ab56a218d8e3a9'
+
+Nameofapp::Application.config.secret_key_base = ENV['NAMEOFAPP_SECRET_TOKEN']

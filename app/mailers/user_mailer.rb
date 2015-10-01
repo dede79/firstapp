@@ -4,7 +4,7 @@ class UserMailer < ActionMailer::Base
     def contact_form(email, name, message)
 	  @message = message
 	  mail(:from => email,
-		:to => 'limahawkins@gmail.com',
+		:to => 'SECRET_EMAIL',
 		:subject => "A new message from #{name}")
     end
 end

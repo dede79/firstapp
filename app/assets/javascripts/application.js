@@ -15,5 +15,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
+//= require jquery.resize
+//= require jquery.waitforimages
+//= require detect-element-resize
+//= require modernizr
 //= require_tree .
-<script src="magnific-popup/jquery.magnific-popup.js"></script>
