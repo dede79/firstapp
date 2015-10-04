@@ -1,0 +1,22 @@
+/* line 1, /home/dede/shopdemo/app/assets/stylesheets/products.css.scss */
+.field {
+  color: blue;
+  max-width: 50%;
+}
+
+/* line 6, /home/dede/shopdemo/app/assets/stylesheets/products.css.scss */
+.form-inline {
+  margin-top: 10px;
+  float: right;
+  color: gray;
+}
+
+/* line 12, /home/dede/shopdemo/app/assets/stylesheets/products.css.scss */
+.showpic {
+  float: left;
+}
+
+/* line 16, /home/dede/shopdemo/app/assets/stylesheets/products.css.scss */
+#comments {
+  float: right;
+}

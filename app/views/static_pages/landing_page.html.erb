@@ -1,11 +1,15 @@
-<h1> Welcome to Dede's Bridal Shop</h1>
-<h2> This Week's Featured Products:</h2>
-
-
-<div data-carousel-3d>
-  
-  <% @products.each do |product| %>
-      
-      <%= image_tag(product.image_url, width: 350, height: 350) %>    
-  <% end %>
+<h1 class="superfont"> Welcome to Dede's Bridal Shop</h1>
+<h2 class="superfont"> This Week's Featured Products:</h2>
+<!-- carousel 3d -->
+<div id="wrapper">
+    <div id="myCarousel" data-carousel-3d>
+	    <% @products.each do |product| %>      
+	    <%= image_tag(product.image_url) %>
+	    <% end %>
+	    <div id="sale">
+		    <h3>Winter Sale:</h3>
+		    <p>Beautiful dresses on sale now!<p>
+		    <p><%= link_to 'Go to Dresses', products_path %></p>
+	    </div>
+	</div>
 </div>

@@ -7,7 +7,7 @@ h2, {
 	text-align: center;
 	font-family: 'Tangerine', cursive;
 	font-weight: 800;
-	}
+}
 
 h1 {
 	font-size: 4em;
@@ -26,12 +26,22 @@ h2 {
 	color: gray;
 }
 
-.carousel {
-    max-width: 80%;
-    margin: auto;
-  }
+.superfont {
+  text-shadow: 0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.1);
 
-.carousel-caption {
-  color: gray;
+}
 
+#sale { 
+	max-width: 640px; 
+	max-height: 480px;
+	min-height: 400px;
+	background-color: none;
+	text-align: center;
+	
 }

@@ -1,4 +1,5 @@
 /* line 3, ../../styles/common/jquery.carousel-3d.scss */
+/* line 3, /home/dede/shopdemo/app/assets/stylesheets/jquery.carousel-3d.default.css.scss */
 [data-carousel-3d] [data-prev-button] {
   position: absolute;
   height: 100%;
@@ -6,7 +7,9 @@
   top: 0px;
   left: 0px;
 }
+
 /* line 10, ../../styles/common/jquery.carousel-3d.scss */
+/* line 11, /home/dede/shopdemo/app/assets/stylesheets/jquery.carousel-3d.default.css.scss */
 [data-carousel-3d] [data-next-button] {
   position: absolute;
   height: 100%;
@@ -16,18 +19,23 @@
 }
 
 /* line 22, ../../styles/common/jquery.carousel-3d.scss */
+/* line 20, /home/dede/shopdemo/app/assets/stylesheets/jquery.carousel-3d.default.css.scss */
 [data-carousel-3d] {
   position: relative;
   overflow: hidden;
 }
+
 /* line 26, ../../styles/common/jquery.carousel-3d.scss */
+/* line 25, /home/dede/shopdemo/app/assets/stylesheets/jquery.carousel-3d.default.css.scss */
 [data-carousel-3d] > [data-children-wrapper] {
   perspective: 3000px;
   -ms-perspective: 3000px;
   -moz-perspective: 3000px;
   -webkit-perspective: 3000px;
 }
+
 /* line 32, ../../styles/common/jquery.carousel-3d.scss */
+/* line 32, /home/dede/shopdemo/app/assets/stylesheets/jquery.carousel-3d.default.css.scss */
 [data-carousel-3d] > [data-children-wrapper] > [data-child] {
   transition: 1s;
   -ms-transition: 1s;
@@ -36,12 +44,15 @@
 }
 
 /* line 43, ../../styles/common/jquery.carousel-3d.scss */
+/* line 40, /home/dede/shopdemo/app/assets/stylesheets/jquery.carousel-3d.default.css.scss */
 [data-carousel-3d] {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
 }
+
 /* line 50, ../../styles/common/jquery.carousel-3d.scss */
+/* line 46, /home/dede/shopdemo/app/assets/stylesheets/jquery.carousel-3d.default.css.scss */
 [data-carousel-3d] > [data-children-wrapper] > [data-child] {
   position: absolute;
   overflow: hidden;
@@ -49,7 +60,9 @@
   width: 100%;
   height: 100%;
 }
+
 /* line 59, ../../styles/common/jquery.carousel-3d.scss */
+/* line 54, /home/dede/shopdemo/app/assets/stylesheets/jquery.carousel-3d.default.css.scss */
 [data-carousel-3d] > [data-children-wrapper] > [data-child] > [data-child-frame] > [data-content-wrapper] {
   box-sizing: border-box;
   transform-origin: 0px 0px;
@@ -59,12 +72,15 @@
 }
 
 /* line 75, ../../styles/common/jquery.carousel-3d.scss */
+/* line 63, /home/dede/shopdemo/app/assets/stylesheets/jquery.carousel-3d.default.css.scss */
 [data-carousel-3d]:before {
   padding-top: 40%;
   display: block;
   content: '';
 }
+
 /* line 82, ../../styles/common/jquery.carousel-3d.scss */
+/* line 69, /home/dede/shopdemo/app/assets/stylesheets/jquery.carousel-3d.default.css.scss */
 [data-carousel-3d] [data-children-wrapper] {
   position: absolute;
   max-width: 900px;
@@ -75,17 +91,20 @@
 }
 
 /* line 9, ../../styles/theme/jquery.carousel-3d.default.scss */
+/* line 79, /home/dede/shopdemo/app/assets/stylesheets/jquery.carousel-3d.default.css.scss */
 [data-carousel-3d] {
-  background: rgba(210, 194, 180, 0.3); 
+  background: rgba(210, 194, 180, 0.3);
 }
 
 /* line 19, ../../styles/theme/jquery.carousel-3d.default.scss */
+/* line 84, /home/dede/shopdemo/app/assets/stylesheets/jquery.carousel-3d.default.css.scss */
 [data-carousel-3d] {
   max-height: 500px;
   border: none;
 }
 
 /* line 26, ../../styles/theme/jquery.carousel-3d.default.scss */
+/* line 90, /home/dede/shopdemo/app/assets/stylesheets/jquery.carousel-3d.default.css.scss */
 [data-carousel-3d] [data-prev-button]:before {
   content: url("./carousel-3d/prev.png");
   position: absolute;
@@ -97,7 +116,9 @@
   height: 49px;
   margin: auto;
 }
+
 /* line 39, ../../styles/theme/jquery.carousel-3d.default.scss */
+/* line 102, /home/dede/shopdemo/app/assets/stylesheets/jquery.carousel-3d.default.css.scss */
 [data-carousel-3d] [data-next-button]:before {
   content: url("./carousel-3d/next.png");
   position: absolute;
@@ -111,6 +132,7 @@
 }
 
 /* line 53, ../../styles/theme/jquery.carousel-3d.default.scss */
+/* line 115, /home/dede/shopdemo/app/assets/stylesheets/jquery.carousel-3d.default.css.scss */
 [data-child-frame] {
   border: 5px solid #ffffff;
 }

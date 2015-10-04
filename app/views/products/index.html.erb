@@ -1,23 +1,25 @@
-<h1>Products Listing:</h1>
-<h2>Add, remove, modify products</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th >Description</th>
-      <th>Image url</th>
-      <th>Colour</th>
-      <th>Price</th>
-      <th ></th>
-    </tr>
-  </thead>
+  <h1>Wedding dresses:</h1>
+  <h2>A list of our current dresses:</h2>
+ 
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th >Description</th>
+            <th>Image url</th>
+            <th>Colour</th>
+            <th>Price</th>
+            <th ></th>
+          </tr>
+        </thead>
 
-  <tbody>
-     <%= render partial: "product", collection: @products %>
-  </tbody>
-</table>
+        <tbody>
+           <%= render partial: "product", collection: @products %>
+        </tbody>
+      </table>
 
-<br>
-
-<%= link_to 'New Product', new_product_path %>
+      <br>
+      <% if signed_in? && current_user.admin? %>
+      <%= link_to 'New Product', new_product_path %>
+      <% end %>
