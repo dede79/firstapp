@@ -19,4 +19,5 @@
 //= require jquery.waitforimages
 //= require detect-element-resize
 //= require modernizr
+//= require jquery.elevatezoom
 //= require_tree .

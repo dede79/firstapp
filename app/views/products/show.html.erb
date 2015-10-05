@@ -3,7 +3,7 @@
     <div class="col-md-6">
       <p id="notice"><%= notice %></p>
       <div id="showpic">
-        <%= image_tag@product.image_url, :class => "img-responsive img-zoom", width: "400", height: "500"%>
+        <%= data: { zoom_image: "#{ image_tag(@product.image_url(:large)) }" }, width: "400", height: "500", :class =>"img-zoom"%>
       </div>
     </div>
     <div class="col-md-6">
