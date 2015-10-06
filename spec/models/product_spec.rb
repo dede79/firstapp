@@ -32,12 +32,16 @@ describe Product do
 		      #@product.comments << Comment.new(body: "body", user: user, product: @product, rating: 5)
 
 		      # with factory
-		      product = create :product
-		      user = create :user
-		      product.comments << build(user: user, :comment, rating: 3)
-		      product.comments << build(user: user, :comment, rating: 4)
-		      product.comments << build(user: user, :comment, rating: 5)
-	        end
+		      product = FactoryGirl.create :product
+		      user = FactoryGirl.create :user
+		      # product.comments << build(user: user, :comment, rating: 3)
+		      # product.comments << build(user: user, :comment, rating: 4)
+		      # product.comments << build(user: user, :comment, rating: 5)
+		      @comment = FactoryGirl.create(:comment, rating: "3")
+              @comment2 = FactoryGirl.create(:comment, rating: "4")
+              @comment3 = FactoryGirl.create(:comment, rating: "5")
+            end
+	     
 	        		
 			it 'returns 4' do		      
 		      # fire
@@ -61,12 +65,12 @@ describe Product do
 		      #@product.comments << Comment.new(body: "body", user: user, product: @product, rating: 4)
               
               #with Factory Girl
-		      product = create :product
-		      user = create :user
-		      product.comments << build(user: user, :comment, rating: 3)
-		      product.comments << build(user: user, :comment, rating: 4)
-		      product.comments << build(user: user, :comment, rating: 3)
-		      product.comments << build(user: user, :comment, rating: 4)
+		      product = FactoryGirl.create :product
+		      user = FactoryGirl.create :user
+		      @comment = FactoryGirl.create(:comment, rating: "3")
+              @comment2 = FactoryGirl.create(:comment, rating: "4")
+              @comment3 = FactoryGirl.create(:comment, rating: "3")
+              @comment4 = FactoryGirl.create(:comment, rating: "4")
 
 	        end
 	        	

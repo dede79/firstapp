@@ -1,3 +1,4 @@
+
 $(document).on('ready page:load', function(){
     $('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
     $('.rated').raty({ path: '/assets', 
@@ -7,6 +8,9 @@ $(document).on('ready page:load', function(){
       }
     });
     
-    $(".img-zoom").elevateZoom();
+    $("img-zoom").elevateZoom();
 
 });
+
+$("#new_comment").html("Thanks for your review!");
+$('.product-reviews').prepend("<%= j render @comment %>");
