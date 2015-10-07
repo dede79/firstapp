@@ -21,4 +21,5 @@
 //= require modernizr
 //= require jquery.elevatezoom
 //= require turbolinks
+//= require jquery.raty
 //= require_tree .
