@@ -1,3 +1,4 @@
+//raty rating function initializer:
 $(document).on('ready page:load', function(){
     $('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
     $('.rated').raty({ path: '/assets', 
@@ -9,5 +10,4 @@ $(document).on('ready page:load', function(){
     
     // zoom in on the product show images
     $(".img-zoom").elevateZoom();
-
 });

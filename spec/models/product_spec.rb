@@ -6,7 +6,7 @@
 
 # 		it "should have a name" do
 # 		  	# setup
-# 		    product = create :product
+# 		    product = FactoryGirl.create :product
 
 # 		    # fire
 # 		    product.valid? # which checks the validity of the product
@@ -34,9 +34,9 @@
 # 		      # with factory
 # 		      product = FactoryGirl.create :product
 # 		      user = FactoryGirl.create :user
-# 		      # product.comments << build(user: user, :comment, rating: 3)
-# 		      # product.comments << build(user: user, :comment, rating: 4)
-# 		      # product.comments << build(user: user, :comment, rating: 5)
+# 		      # product.comments << build(user: user, :comment, :rating => "3")
+# 		      # product.comments << build(user: user, :comment, :rating => "4")
+# 		      # product.comments << build(user: user, :comment, :rating => "5")
 # 		      @comment = FactoryGirl.create(:comment, rating: "3")
 #               @comment2 = FactoryGirl.create(:comment, rating: "4")
 #               @comment3 = FactoryGirl.create(:comment, rating: "5")
@@ -67,11 +67,10 @@
 #               #with Factory Girl
 # 		      product = FactoryGirl.create :product
 # 		      user = FactoryGirl.create :user
-# 		      @comment = FactoryGirl.create(:comment, rating: "3")
-#               @comment2 = FactoryGirl.create(:comment, rating: "4")
-#               @comment3 = FactoryGirl.create(:comment, rating: "3")
-#               @comment4 = FactoryGirl.create(:comment, rating: "4")
-
+# 		      @comment = FactoryGirl.create(:comment, :rating => "3")
+#               @comment2 = FactoryGirl.create(:comment, :rating => "4")
+#               @comment3 = FactoryGirl.create(:comment, :rating => "3")
+#               @comment4 = FactoryGirl.create(:comment, :rating => "4")
 # 	        end
 	        	
 

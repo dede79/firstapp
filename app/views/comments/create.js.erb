@@ -6,11 +6,8 @@ $(document).on('ready page:load', function(){
       score: function() {
         return $(this).attr('data-score');
       }
-    });
-    
-    $("img-zoom").elevateZoom();
-
+    })
 });
 
 $("#new_comment").html("Thanks for your review!");
-$('.product-reviews').prepend("<%= j render @comment %>");
+$('.product-reviews').find('.comment-display').prepend('"<%= j render @comment %>"');

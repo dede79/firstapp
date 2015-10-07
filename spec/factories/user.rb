@@ -7,7 +7,7 @@ FactoryGirl.define do
     email "test@sometest.com"
     password "65498766"
     admin false
-    end
+  end
   # This will use the User class (Admin would have been guessed)
   factory :admin, class: User do
     first_name "Admin"

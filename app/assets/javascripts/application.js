@@ -11,13 +11,14 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require bootstrap-sprockets
 //= require jquery_ujs
-//= require turbolinks
 //= require bootstrap
 //= require jquery.resize
 //= require jquery.waitforimages
 //= require detect-element-resize
 //= require modernizr
 //= require jquery.elevatezoom
+//= require turbolinks
 //= require_tree .

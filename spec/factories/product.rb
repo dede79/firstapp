@@ -1,14 +1,13 @@
-# FactoryGirl.define do
-#   factory :product do
-#   name "Oneproduct"
-#   id "1"
-#   description "pretty"
-#   end
+FactoryGirl.define do
+  factory :product do
+  name "Oneproduct"
+  description "pretty"
 
-# 	factory :comment do
-# 	    user_id "3"
-# 	    body "nice dress"    
-# 	    rating "3"
-# 	    product_id "1"
-# 	end
-# end
+  end
+
+	factory :comment do
+	    user_id "3"
+	    body "nice dress"
+	    rating "5"    
+	end
+end
