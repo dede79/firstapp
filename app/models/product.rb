@@ -1,8 +1,8 @@
 class Product < ActiveRecord::Base
 	has_many :orders
 	has_many :comments
-	belongs_to :user
-	validates :name, presence: true
+	belongs_to :user, touch: true
+	validates :name, presence: true, uniqueness: {case_sensitive: false}
 
 
 	def average_rating

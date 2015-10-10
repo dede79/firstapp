@@ -73,6 +73,10 @@ gem 'will_paginate-bootstrap'
 gem "factory_girl_rails", "~> 4.0"
 
 gem "elevatezoom-rails"
+
+gem 'actionpack-page_caching'
+
+gem 'dalli'
  
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
