@@ -74,8 +74,6 @@ gem "factory_girl_rails", "~> 4.0"
 
 gem "elevatezoom-rails"
 
-gem 'actionpack-page_caching'
-
 gem 'dalli'
  
 group :doc do

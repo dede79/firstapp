@@ -4,19 +4,17 @@ describe Product do
 
   describe "#name" do
 
-		it "should have a name" do
+		it 'should have a name' do
 	  	# setup
-	    product = create :product
+	    product = build(:product, name: nil)
 
-	    expect(product.name).to be_blank
+	    expect(product.name).to be_blank 
 
 	    # fire
 	    product.valid? # which checks the validity of the product
 
-	    # test results
-
 	    # expect( product.errors[:name].include?("can't be blank") ).to(be_truthy)
-      expect(products.errors[:name]).to include("can't be blank")
+      expect(product.errors[:name]).to include("can't be blank")
 	  end
 
 	  it 'should not have the same product twice' do
@@ -24,7 +22,7 @@ describe Product do
 
 	  	product2 = build :product, name: product.name
 
-	  	expect(product2.name).to eq(product.name)
+	  	expect(product2.name).to eq(product.name) 
 
 	  	# fire
 	  	product2.valid?
@@ -81,7 +79,8 @@ describe Product do
     end 	
 	     
 	    context 'when comments with ratings 3 4 3 4' do
-	        before do
+
+	      before do
 			  # setup : You need to create for instance 1 product with 4 comments
 		      #first comment to have rating 3, second comment to have rating 4
 		      # and third comment to have rating 3 and foruth comment is 4
@@ -93,13 +92,13 @@ describe Product do
 		      #@product.comments << Comment.new(body: "body", user: user, product: @product, rating: 4)
               
               #with Factory Girl
-		      product = FactoryGirl.create :product
+		      @product = FactoryGirl.create :product
 		      user = FactoryGirl.create :user
-		      @comment = FactoryGirl.create(:comment, :rating => "3")
-              @comment2 = FactoryGirl.create(:comment, :rating => "4")
-              @comment3 = FactoryGirl.create(:comment, :rating => "3")
-              @comment4 = FactoryGirl.create(:comment, :rating => "4")
-	        end
+		      @comment = FactoryGirl.create(:comment, user: user, product: @product, rating: "3")
+          @comment2 = FactoryGirl.create(:comment, user: user, product: @product, rating: "4")
+          @comment3 = FactoryGirl.create(:comment, user: user, product: @product, rating: "3")
+          @comment4 = FactoryGirl.create(:comment, user: user, product: @product, rating: "4")
+	      end
 	        	
 
 		    it 'returns 3.5' do
@@ -110,6 +109,6 @@ describe Product do
 		      # test results
 		      expect(result).to eq(3.5)
 		    end 
-		end
+		  end
   end	
 end

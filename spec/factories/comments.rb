@@ -1,6 +1,6 @@
 FactoryGirl.define do
 	factory :comment do
-	  association :user
+	  association :user  #when comment is created, it will bind it to a product and user created beforehand
 	  association :product
 	  
 	  body "nice dress"

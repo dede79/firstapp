@@ -1,41 +1,33 @@
 
-  <h1>Wedding dresses:</h1>
-  <h2>A list of our current dresses:</h2>
+<h1>Wedding dresses:</h1>
+<h2>A list of our current dresses:</h2>
 
-  <% cache do %>
 
-    <h3>All available products:</h3>
-    <% @products.each do |p| %>
-
-      <% cache(p) do %>
-        <small>New picece of html here inside cache</small>
-        <%= link_to "#{p.name}****", product_url(p) %>
-      <% end %>
-
-    <% end %>
-
-  <% end %>
-
- 
-  <% if signed_in? && current_user.admin? %>
-    
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Image url</th>
-            <th>Colour</th>
-            <th>Price</th>
-            <th></th>
-          </tr>
-        </thead>
-       
-        <tbody>
-           <%= render partial: "product", collection: @products %>
-        </tbody>
-      </table>
-    
-      <br>
-     <%= link_to 'New Product', new_product_path %> 
-      <% end %>
+<!-- code below NOT using cache - admin products table-->
+<% if signed_in? && current_user.admin? %>
+  
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Image url</th>
+          <th>Colour</th>
+          <th>Price</th>
+          <th></th>
+        </tr>
+      </thead>
+     
+      <tbody>
+        <% cache(cache_key_for_products) do %>
+          <% @products each do |p| %>
+            <% cache(p) do %>
+              <% render partial: "products/product" %>
+            <% end %>
+          <% end %>
+        <% end %>
+      </tbody>
+    </table>
+    <br>
+  <%= link_to 'New Product', new_product_path %> 
+<% end %>
