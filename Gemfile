@@ -75,7 +75,9 @@ gem "factory_girl_rails", "~> 4.0"
 gem "elevatezoom-rails"
 
 gem 'dalli'
- 
+
+gem 'actionpack-page_caching'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
