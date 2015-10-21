@@ -13,10 +13,10 @@ FactoryGirl.define do
     admin false
 
     # This will use the User class (Admin would have been guessed)
-    factory :admin do
-      first_name "Admin"
-      last_name  "User"
-      admin      true
-    end
+    # factory :admin do
+    #   first_name "Admin"
+    #   last_name  "User"
+    #   admin      true
+    # end
   end  
 end
