@@ -14,6 +14,8 @@ ruby '2.2.2'
 
 gem 'spork-rails'
 
+gem 'redis-rails' 
+
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3'

@@ -2,36 +2,40 @@
 <h1>Wedding dresses:</h1>
 <h2>A list of our current dresses:</h2>
 
-
-<!-- code below NOT using cache - admin products table-->
-
-  
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Description</th>
-          <th>Image url</th>
-          <th>Colour</th>
-          <th>Price</th>
-          <th></th>
-        </tr>
-      </thead>
-  
-
-      <tbody>
-        <% cache(cache_key_for_products) do %>
-          <% @products.each do |p| %>
-            <% cache(p) do %>
-              <%= render partial:"products/product" %>
-            <% end %>
-          <% end %>
-        <% end %>
-      </tbody>
-    </table>
-    <br>
-
-<% if signed_in? && current_user.admin? %>
-  <%= link_to 'New Product', new_product_path %> 
+<h5>Quick Links:</h5>
+<% cache do %>
+  <% Product.all.each do |p| %>
+    <p><%= link_to p.name, product_url(p) %></p>
+  <% end %>
 <% end %>
+<br><br>
+
+<div class="row">
+
+<% @products.each do |product| %>
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <%= image_tag(product.image_url, height: 400)%>
+      <div class="caption">
+        <h3><%= product.name %></h3>
+        <p><%= product.description %></p>
+        <p>Colour: <%= product.colour %></p>
+        <p>Price: <%= product.price %></p>
+        <p><%= link_to 'Show ', product %></p>
+        <% if signed_in? && current_user.admin? %>
+          <% link_to 'New Product', new_product_path %>
+          <%= link_to 'Edit ', edit_product_path(product) %>&nbsp;
+          <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+</div>
+
+<br>
+
+
+    
 
